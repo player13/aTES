@@ -1,0 +1,43 @@
+debug: true
+
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task
+    username: task_user
+    password: task_password
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.UUIDSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: task-consumer-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.UUIDDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080
+          jwk-set-uri: http://localhost:8080/oauth2/jwks
+          audiences: test-client
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: task-client
+      authorization-url: http://localhost:8080/oauth2/authorize
+      token-url: http://localhost:8080/oauth2/token
+      refresh-url: http://localhost:8080/oauth2/refresh
+
+event:
+  user:
+    streaming: users.streaming
+    business: users.business
+  task:
+    streaming: tasks.streaming
+    business: tasks.business

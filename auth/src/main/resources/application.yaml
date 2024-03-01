@@ -1,0 +1,26 @@
+debug: true
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth
+    username: auth_user
+    password: auth_password
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.UUIDSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  flyway:
+    locations: db/migration
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          issuer-uri: /
+#          jwk-set-uri: /oauth2/jwks
+#          audiences: auth-client
+
+event:
+  user:
+    streaming: users.streaming
+    business: users.business
