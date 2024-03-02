@@ -24,7 +24,7 @@ spring:
         jwt:
           issuer-uri: http://localhost:8080
           jwk-set-uri: http://localhost:8080/oauth2/jwks
-          audiences: test-client
+          audiences: task-client
 
 springdoc:
   swagger-ui:

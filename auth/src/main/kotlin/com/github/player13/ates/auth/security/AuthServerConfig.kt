@@ -62,7 +62,7 @@ class AuthServerConfig {
             RegisteredClient.withId("fbe02ba8-18c0-485e-a7c8-fa2e39abc5c6")
                 .clientName("Task Client")
                 .clientId("task-client")
-                .clientSecret("{noop}test-client") // todo: move to params
+                .clientSecret("{noop}task-client") // todo: move to params
                 .redirectUri("http://localhost:8081/swagger-ui/oauth2-redirect.html")
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_POST)
