@@ -69,24 +69,26 @@ class AuthServerConfig {
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
                 .build(),
-            /* RegisteredClient.withId("auth-client-id")
-                .clientName("Auth Client")
-                .clientId("auth-client")
-                .clientSecret("{noop}auth-client")
-                .scopes { it.add("qweqwe") }
-                // .redirectUri("http://localhost:8081")
-                // .redirectUri("http://localhost:8080/oauth2/authorize")
-                // .redirectUri("$taskServiceOrigin${Constants.SWAGGER_UI_OAUTH_REDIRECT_URL}")
-                .redirectUri("http://localhost:8080/swagger-ui/oauth2-redirect.html") // ???
-
-                // .redirectUri("http://127.0.0.1:8080/authorized")
-                // .redirectUri("https://oauth.pstmn.io/callback")
+            RegisteredClient.withId("39238d49-9342-4c5c-9016-f829fc290812")
+                .clientName("Accounting Client")
+                .clientId("accounting-client")
+                .clientSecret("{noop}accounting-client")
+                .redirectUri("http://localhost:8082/swagger-ui/oauth2-redirect.html")
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_POST)
-                .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
-                .build(), */
+                .build(),
+            RegisteredClient.withId("6ef85733-369b-47b7-b56d-53d7ff315560")
+                .clientName("Analytics Client")
+                .clientId("analytics-client")
+                .clientSecret("{noop}analytics-client")
+                .redirectUri("http://localhost:8083/swagger-ui/oauth2-redirect.html")
+                .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
+                .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_POST)
+                .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
+                .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
+                .build(),
         )
     }
 

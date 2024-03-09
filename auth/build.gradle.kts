@@ -5,6 +5,8 @@ plugins {
 }
 
 dependencies {
+	implementation(project(":event"))
+
 	// kotlin
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
@@ -18,8 +20,9 @@ dependencies {
 	// swagger
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui")
 
-	// jackson
+	// serialization
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("io.confluent:kafka-avro-serializer")
 
 	// database
 	implementation("org.flywaydb:flyway-core")
