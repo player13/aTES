@@ -1,0 +1,33 @@
+{
+    "name": "TransactionApplied",
+    "namespace": "com.github.player13.ates.event.transaction",
+    "type": "record",
+    "fields" : [
+        {
+            "name": "userId",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "reason",
+            "type": "string"
+        },
+        {
+            "name": "amount",
+            "type": "long"
+        },
+        {
+            "name": "resultingBalance",
+            "type": "long"
+        },
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+            }
+        }
+    ]
+}

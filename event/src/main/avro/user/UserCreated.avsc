@@ -1,0 +1,22 @@
+{
+    "name": "UserCreated",
+    "namespace": "com.github.player13.ates.event.user",
+    "type": "record",
+    "fields" : [
+        {
+            "name": "id",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "login",
+            "type": "string"
+        },
+        {
+            "name": "role",
+            "type": "Role"
+        }
+    ]
+}

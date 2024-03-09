@@ -1,0 +1,26 @@
+{
+    "name": "TaskCreated",
+    "namespace": "com.github.player13.ates.event.task",
+    "type": "record",
+    "fields" : [
+        {
+            "name": "id",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "summary",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "Status"
+        }
+    ]
+}
