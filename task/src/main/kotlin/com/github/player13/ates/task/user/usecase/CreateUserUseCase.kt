@@ -18,7 +18,7 @@ class CreateUserUseCase(
 
         private fun CreateUserCommand.toUser() =
             User(
-                id = id,
+                publicId = publicId,
                 login = login,
                 role = role,
             )
@@ -26,7 +26,7 @@ class CreateUserUseCase(
 }
 
 data class CreateUserCommand(
-    val id: UUID,
+    val publicId: UUID,
     val login: String,
     val role: Role,
 )

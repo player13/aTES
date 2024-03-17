@@ -1,6 +1,6 @@
 package com.github.player13.ates.task.task.rest
 
-import com.github.player13.ates.task.task.rest.TaskWithExecutorView.ExecutorView
+import com.github.player13.ates.task.task.rest.TaskWithExecutorView.ExecutorUserView
 import com.github.player13.ates.task.task.Task
 import com.github.player13.ates.task.task.usecase.AddTaskCommand
 import com.github.player13.ates.task.task.usecase.AddTaskUseCase
@@ -56,14 +56,14 @@ class TaskController(
     @PostMapping("/{id}/complete")
     fun complete(@PathVariable id: UUID, authentication: Authentication): TaskView = // todo: customize user injection
         authentication.name.let { UUID.fromString(it) }
-            .let { completeTasksUseCase.complete(CompleteTaskCommand(taskId = id, executorUserId = it)) }
+            .let { completeTasksUseCase.complete(CompleteTaskCommand(taskPublicId = id, executorPublicId = it)) }
             .toTaskView()
 
     companion object {
 
         private fun Task.toTaskView() =
             TaskView(
-                id = id,
+                publicId = publicId,
                 summary = summary,
                 description = description,
                 status = status,
@@ -71,7 +71,7 @@ class TaskController(
 
         private fun Task.toTaskWithExecutorView() =
             TaskWithExecutorView(
-                id = id,
+                publicId = publicId,
                 summary = summary,
                 description = description,
                 status = status,
@@ -79,8 +79,8 @@ class TaskController(
             )
 
         private fun User.toExecutorView() =
-            ExecutorView(
-                id = id,
+            ExecutorUserView(
+                publicId = publicId,
                 login = login,
             )
 

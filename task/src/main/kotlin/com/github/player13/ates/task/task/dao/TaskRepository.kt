@@ -7,9 +7,11 @@ import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface TaskRepository : JpaRepository<Task, UUID> {
+interface TaskRepository : JpaRepository<Task, Long> {
+
+    fun findByPublicId(publicId: UUID): Task?
 
     fun findAllByStatus(status: Status): List<Task>
 
-    fun findAllByExecutorIdAndStatus(executorId: UUID, status: Status): List<Task>
+    fun findAllByExecutorPublicIdAndStatus(executorPublicId: UUID, status: Status): List<Task>
 }

@@ -30,7 +30,7 @@ class UserController(
 
         private fun User.toUserView() =
             UserView(
-                id = id,
+                publicId = publicId,
                 login = login,
                 role = role,
             )

@@ -2,19 +2,51 @@
     "name": "TaskCompleted",
     "namespace": "com.github.player13.ates.event.task",
     "type": "record",
-    "fields" : [
+    "fields": [
         {
-            "name": "id",
+            "name": "meta",
             "type": {
-                "type": "string",
-                "logicalType": "uuid"
+                "name": "TaskCompletedMeta",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "version",
+                        "type": {
+                            "name": "TaskCompletedVersion",
+                            "type": "enum",
+                            "symbols": [
+                                "v1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "sender",
+                        "type": "string"
+                    }
+                ]
             }
         },
         {
-            "name": "executorUserId",
+            "name": "payload",
             "type": {
-                "type": "string",
-                "logicalType": "uuid"
+                "name": "TaskCompletedPayload",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "publicId",
+                        "type": {
+                            "type": "string",
+                            "logicalType": "uuid"
+                        }
+                    },
+                    {
+                        "name": "executorPublicId",
+                        "type": {
+                            "type": "string",
+                            "logicalType": "uuid"
+                        }
+                    }
+                ]
             }
         }
     ]

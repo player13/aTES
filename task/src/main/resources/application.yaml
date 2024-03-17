@@ -49,8 +49,8 @@ springdoc:
 
 event:
   user:
-    streaming: users.streaming
-    business: users.business
+    streaming: user-stream
+    business: user-lifecycle
   task:
-    streaming: tasks.streaming
-    business: tasks.business
+    streaming: task-stream
+    business: task-lifecycle

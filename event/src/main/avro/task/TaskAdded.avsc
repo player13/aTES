@@ -2,27 +2,57 @@
     "name": "TaskAdded",
     "namespace": "com.github.player13.ates.event.task",
     "type": "record",
-    "fields" : [
+    "fields": [
         {
-            "name": "id",
+            "name": "meta",
             "type": {
-                "type": "string",
-                "logicalType": "uuid"
+                "name": "TaskAddedMeta",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "version",
+                        "type": {
+                            "name": "TaskAddedVersion",
+                            "type": "enum",
+                            "symbols": ["v1"]
+                        }
+                    },
+                    {
+                        "name": "sender",
+                        "type": "string"
+                    }
+                ]
             }
         },
         {
-            "name": "summary",
-            "type": "string"
-        },
-        {
-            "name": "description",
-            "type": "string"
-        },
-        {
-            "name": "executorUserId",
+            "name": "payload",
             "type": {
-                "type": "string",
-                "logicalType": "uuid"
+                "name": "TaskAddedPayload",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "publicId",
+                        "type": {
+                            "type": "string",
+                            "logicalType": "uuid"
+                        }
+                    },
+                    {
+                        "name": "summary",
+                        "type": "string"
+                    },
+                    {
+                        "name": "description",
+                        "type": "string"
+                    },
+                    {
+                        "name": "executorPublicId",
+                        "type": {
+                            "type": "string",
+                            "logicalType": "uuid"
+                        }
+                    }
+                ]
             }
         }
     ]

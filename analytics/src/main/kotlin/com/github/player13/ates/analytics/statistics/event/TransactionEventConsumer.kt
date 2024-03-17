@@ -7,6 +7,8 @@ import com.github.player13.ates.analytics.statistics.usecase.CalculateMostExpens
 import com.github.player13.ates.analytics.statistics.usecase.CalculateNegativeBalanceCountCommand
 import com.github.player13.ates.analytics.statistics.usecase.CalculateNegativeBalanceCountUseCase
 import com.github.player13.ates.event.transaction.TransactionApplied
+import com.github.player13.ates.event.transaction.TransactionAppliedPayload
+import com.github.player13.ates.event.transaction.TransactionAppliedVersion
 import java.time.LocalDate
 import java.time.ZoneOffset
 import org.apache.avro.specific.SpecificRecord
@@ -23,34 +25,42 @@ class TransactionEventConsumer(
     @KafkaListener(topics = ["\${event.transaction.business}"])
     fun receive(event: SpecificRecord) {
         when (event) {
-            is TransactionApplied -> run {
-
-                val date = LocalDate.ofInstant(event.timestamp, ZoneOffset.UTC)
-
-                calculateCompanyProfitUseCase.calculate(
-                    CalculateCompanyProfitCommand(
-                        date = date,
-                        profitChange = event.amount,
-                    )
-                )
-
-                if (event.amount > 0) {
-                    calculateMostExpensiveTaskUseCase.calculate(
-                        CalculateMostExpensiveTaskCommand(
-                            date = date,
-                            reward = event.amount.toByte(),
-                        )
-                    )
-                }
-
-                calculateNegativeBalanceCountUseCase.calculate(
-                    CalculateNegativeBalanceCountCommand(
-                        date = date,
-                        userId = event.userId,
-                        balance = event.resultingBalance,
-                    )
-                )
-            }
+            is TransactionApplied -> consume(event)
         }
+    }
+
+    private fun consume(event: TransactionApplied) {
+        when (event.meta.version) {
+            TransactionAppliedVersion.v1 -> consume(event.payload)
+            else -> {}
+        }
+    }
+
+    private fun consume(payload: TransactionAppliedPayload) {
+        val date = LocalDate.ofInstant(payload.timestamp, ZoneOffset.UTC)
+
+        calculateCompanyProfitUseCase.calculate(
+            CalculateCompanyProfitCommand(
+                date = date,
+                profitChange = payload.amount,
+            )
+        )
+
+        if (payload.amount > 0) {
+            calculateMostExpensiveTaskUseCase.calculate(
+                CalculateMostExpensiveTaskCommand(
+                    date = date,
+                    reward = payload.amount.toByte(),
+                )
+            )
+        }
+
+        calculateNegativeBalanceCountUseCase.calculate(
+            CalculateNegativeBalanceCountCommand(
+                date = date,
+                userId = payload.userPublicId,
+                balance = payload.resultingBalance,
+            )
+        )
     }
 }

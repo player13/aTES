@@ -17,7 +17,7 @@ class PayoutUseCase(
             .onEach {
                 sendPayslipByEmailUseCase.send(
                     SendPayslipByEmailCommand(
-                        userId = it.userId,
+                        userPublicId = it.userPublicId,
                         amount = it.balance,
                     )
                 )
@@ -25,7 +25,8 @@ class PayoutUseCase(
             .forEach {
                 applyTransactionUseCase.apply(
                     ApplyTransactionCommand(
-                        userId = it.userId,
+                        userPublicId = it.userPublicId,
+                        taskPublicId = null,
                         amount = -it.balance,
                         reason = "Выплата заработной платы",
                     )

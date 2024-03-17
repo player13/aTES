@@ -1,6 +1,10 @@
 package com.github.player13.ates.auth.user.event
 
+import com.github.player13.ates.auth.AuthApp
 import com.github.player13.ates.event.user.UserCreated
+import com.github.player13.ates.event.user.UserCreatedMeta
+import com.github.player13.ates.event.user.UserCreatedPayload
+import com.github.player13.ates.event.user.UserCreatedVersion
 import java.util.UUID
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.kafka.core.KafkaTemplate
@@ -15,10 +19,19 @@ class UserEventProducer(
     private val topic: String,
 ) {
 
-    fun send(event: UserCreated) {
+    fun send(payload: UserCreatedPayload) {
+        val event = UserCreated.newBuilder()
+            .setMeta(
+                UserCreatedMeta.newBuilder()
+                    .setVersion(UserCreatedVersion.v1)
+                    .setSender(AuthApp::class.simpleName)
+                    .build()
+            )
+            .setPayload(payload)
+            .build()
         kafkaTemplate.send(
             MessageBuilder.withPayload(event)
-                .setHeader(KafkaHeaders.KEY, event.id)
+                .setHeader(KafkaHeaders.KEY, payload.publicId)
                 .setHeader(KafkaHeaders.TOPIC, topic)
                 .build()
         )

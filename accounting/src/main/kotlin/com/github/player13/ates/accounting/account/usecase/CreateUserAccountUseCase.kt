@@ -17,13 +17,13 @@ class CreateUserAccountUseCase(
 
         private fun CreateUserAccountCommand.toUser() =
             UserAccount(
-                userId = id,
+                userPublicId = publicId,
                 balance = 0,
             )
     }
 }
 
 data class CreateUserAccountCommand(
-    val id: UUID,
+    val publicId: UUID,
     val login: String,
 )

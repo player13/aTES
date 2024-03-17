@@ -1,18 +1,18 @@
 {
-    "name": "TransactionApplied",
-    "namespace": "com.github.player13.ates.event.transaction",
+    "name": "TaskUpdated",
+    "namespace": "com.github.player13.ates.event.task",
     "type": "record",
     "fields": [
         {
             "name": "meta",
             "type": {
-                "name": "TransactionAppliedMeta",
+                "name": "TaskUpdatedMeta",
                 "type": "record",
                 "fields": [
                     {
                         "name": "version",
                         "type": {
-                            "name": "TransactionAppliedVersion",
+                            "name": "TaskUpdatedVersion",
                             "type": "enum",
                             "symbols": [
                                 "v1"
@@ -29,41 +29,50 @@
         {
             "name": "payload",
             "type": {
-                "name": "TransactionAppliedPayload",
+                "name": "TaskUpdatedPayload",
                 "type": "record",
                 "fields": [
                     {
-                        "name": "userPublicId",
+                        "name": "publicId",
                         "type": {
                             "type": "string",
                             "logicalType": "uuid"
                         }
                     },
                     {
-                        "name": "taskPublicId",
-                        "type": {
-                            "type": "string",
-                            "logicalType": "uuid"
-                        }
+                        "name": "summary",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     {
-                        "name": "reason",
-                        "type": "string"
+                        "name": "description",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     {
-                        "name": "amount",
-                        "type": "long"
+                        "name": "status",
+                        "type": [
+                            "Status",
+                            "null"
+                        ]
                     },
                     {
-                        "name": "resultingBalance",
-                        "type": "long"
+                        "name": "assignmentFee",
+                        "type": [
+                            "int",
+                            "null"
+                        ]
                     },
                     {
-                        "name": "timestamp",
-                        "type": {
-                            "type": "long",
-                            "logicalType": "timestamp-millis"
-                        }
+                        "name": "completionReward",
+                        "type": [
+                            "int",
+                            "null"
+                        ]
                     }
                 ]
             }

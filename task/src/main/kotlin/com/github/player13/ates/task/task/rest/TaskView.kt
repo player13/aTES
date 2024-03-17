@@ -4,7 +4,7 @@ import com.github.player13.ates.task.task.Status
 import java.util.UUID
 
 data class TaskView(
-    val id: UUID,
+    val publicId: UUID,
     val summary: String,
     val description: String,
     val status: Status,

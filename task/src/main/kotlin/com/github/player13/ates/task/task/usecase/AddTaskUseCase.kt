@@ -1,7 +1,7 @@
 package com.github.player13.ates.task.task.usecase
 
-import com.github.player13.ates.event.task.TaskAdded
-import com.github.player13.ates.event.task.TaskCreated
+import com.github.player13.ates.event.task.TaskAddedPayload
+import com.github.player13.ates.event.task.TaskCreatedPayload
 import com.github.player13.ates.task.task.Status
 import com.github.player13.ates.task.task.Task
 import com.github.player13.ates.task.task.dao.TaskRepository
@@ -31,7 +31,7 @@ class AddTaskUseCase(
 
         private fun AddTaskCommand.toTask(executor: User) =
             Task(
-                id = UUID.randomUUID(),
+                publicId = UUID.randomUUID(),
                 summary = summary,
                 description = description,
                 status = Status.IN_PROGRESS,
@@ -39,19 +39,19 @@ class AddTaskUseCase(
             )
 
         private fun Task.toTaskCreatedEvent() =
-            TaskCreated.newBuilder()
-                .setId(id)
+            TaskCreatedPayload.newBuilder()
+                .setPublicId(publicId)
                 .setSummary(summary)
                 .setDescription(description)
                 .setStatus(status.toEvent())
                 .build()
 
         private fun Task.toTaskAddedEvent() =
-            TaskAdded.newBuilder()
-                .setId(id)
+            TaskAddedPayload.newBuilder()
+                .setPublicId(publicId)
                 .setSummary(summary)
                 .setDescription(description)
-                .setExecutorUserId(executor.id)
+                .setExecutorPublicId(executor.publicId)
                 .build()
     }
 }

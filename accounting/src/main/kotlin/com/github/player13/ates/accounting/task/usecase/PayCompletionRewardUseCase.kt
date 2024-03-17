@@ -4,7 +4,6 @@ import com.github.player13.ates.accounting.account.usecase.ApplyTransactionComma
 import com.github.player13.ates.accounting.account.usecase.ApplyTransactionUseCase
 import com.github.player13.ates.accounting.task.dao.TaskRepository
 import java.util.UUID
-import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Component
 
 @Component
@@ -14,12 +13,13 @@ class PayCompletionRewardUseCase(
 ) {
 
     fun pay(command: PayCompletionRewardCommand) {
-        val task = taskRepository.findByIdOrNull(command.taskId)
-            ?: error("Task ${command.taskId} not found")
+        val task = taskRepository.findByPublicId(command.taskPublicId)
+            ?: error("Task ${command.taskPublicId} not found")
 
         applyTransactionUseCase.apply(
             ApplyTransactionCommand(
-                userId = command.userId,
+                userPublicId = command.userPublicId,
+                taskPublicId = command.taskPublicId,
                 amount = task.completionReward.toLong(),
                 reason = "Начисление вознаграждения за исполнение задачи '${task.summary}'",
             )
@@ -28,6 +28,6 @@ class PayCompletionRewardUseCase(
 }
 
 data class PayCompletionRewardCommand(
-    val taskId: UUID,
-    val userId: UUID,
+    val taskPublicId: UUID,
+    val userPublicId: UUID,
 )

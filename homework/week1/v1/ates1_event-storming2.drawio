@@ -1,0 +1,324 @@
+<mxfile host="Electron" modified="2024-02-21T14:16:18.323Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="EsWxpVsr9mP4n5lmgBdB" version="23.1.5" type="device">
+  <diagram name="Page-1" id="BTBTiwG7ZaJVymEiWCRw">
+    <mxGraphModel dx="1242" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-163" value="Accounts" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=none;align=center;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="200" width="930" height="990" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-165" value="Audit" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=none;align=center;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="2010" y="540" width="440" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-166" value="Analytics" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=none;align=center;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="2020" y="150" width="440" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-1" value="Actor" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#fef8ba;strokeColor=#fef8ba;" parent="1" vertex="1">
+          <mxGeometry x="40" y="80" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-2" value="Command" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="40" y="620" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-3" value="Aggregate" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f1d55d;strokeColor=#f1d55d;" parent="1" vertex="1">
+          <mxGeometry x="40" y="260" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-4" value="System" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#e3818c;strokeColor=#e3818c;" parent="1" vertex="1">
+          <mxGeometry x="40" y="530" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-5" value="Read Model" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="40" y="170" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-6" value="Event" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;" parent="1" vertex="1">
+          <mxGeometry x="40" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-8" value="Policy" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#e0a4c0;strokeColor=#e0a4c0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="350" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-9" value="Сотрудник &lt;font style=&quot;font-size: 12px;&quot;&gt;зарегисти-рован&lt;/font&gt;" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="360" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-10" value="Задача создана" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="360" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-11" value="Задача назначена на исполнителя" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="920" y="600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-12" value="Задача выполнена" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="920" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-13" value="ЛС сотрудника создан" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1161" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-14" value="Вознаграж-дение за исполнение задачи зачислено" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1241" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-16" value="Добавлена запись аудита ЛС" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2130" y="940" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-17" value="Задаче назначена стоимость назначения и исполнения" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="600" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-18" value="Зарегистри-роваться в системе" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="280" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-19" value="Любой сотрудник" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#fef8ba;strokeColor=#fef8ba;" parent="1" vertex="1">
+          <mxGeometry x="200" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-20" value="Создать задачу" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="280" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-21" value="Любой сотрудник" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#fef8ba;strokeColor=#fef8ba;" parent="1" vertex="1">
+          <mxGeometry x="200" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-23" value="Выполнить задачу" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="840" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-24" value="Зачислить вознаграж-дение за исполнение задачи" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="1161" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-26" value="Оценить задачу" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="520" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-27" value="Добавить запись аудита ЛС" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="2050" y="940" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-28" value="Создать ЛС сотрудника" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="1081" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-31" value="Менеджер или администра-тор" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#fef8ba;strokeColor=#fef8ba;" parent="1" vertex="1">
+          <mxGeometry x="760" y="600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-33" value="Исполнитель" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#fef8ba;strokeColor=#fef8ba;" parent="1" vertex="1">
+          <mxGeometry x="760" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-34" value="Исполнитель = не менеджер &amp;amp; не администратор &amp;amp; не бухгалтер" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="50" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-35" value="Задача назначена на исполнителя" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="920" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-36" value="Назначить задачу на случайного исполнителя" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="840" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-38" value="Назначить задачу на случайного исполнителя" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="840" y="600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-41" value="Плата за назначение задачи списана" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1241" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-42" value="Списать плату за назначение задачи" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="1161" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=34.5;entryDy=0;entryPerimeter=0;curved=1;" parent="1" source="mUZLVD3MMct8JdN2_CIU-35" target="mUZLVD3MMct8JdN2_CIU-42" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="400" />
+              <mxPoint x="1196" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-48" value="Плата за назначение задачи списана" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1241" y="600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-49" value="Списать плату за назначение задачи" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="1161" y="600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=34.5;entryDy=0;entryPerimeter=0;curved=1;" parent="1" source="mUZLVD3MMct8JdN2_CIU-9" target="mUZLVD3MMct8JdN2_CIU-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="240" />
+              <mxPoint x="1116" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=34.5;entryDy=0;entryPerimeter=0;curved=1;" parent="1" source="mUZLVD3MMct8JdN2_CIU-10" target="mUZLVD3MMct8JdN2_CIU-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="400" />
+              <mxPoint x="555" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=34.5;entryDy=0;entryPerimeter=0;curved=1;" parent="1" source="mUZLVD3MMct8JdN2_CIU-17" target="mUZLVD3MMct8JdN2_CIU-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="400" />
+              <mxPoint x="875" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=34.5;entryDy=0;entryPerimeter=0;curved=1;" parent="1" source="mUZLVD3MMct8JdN2_CIU-11" target="mUZLVD3MMct8JdN2_CIU-49" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="560" />
+              <mxPoint x="1196" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=34.5;entryDy=0;entryPerimeter=0;curved=1;" parent="1" source="mUZLVD3MMct8JdN2_CIU-12" target="mUZLVD3MMct8JdN2_CIU-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="720" />
+              <mxPoint x="1196" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-62" value="Список всех невыполнен-ных задач" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="680" y="600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-63" value="Список невыполнен-ных задач исполнителя" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="680" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-73" value="Выплатить сотруднику жалование" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="1241" y="920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-74" value="Расписание" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#fef8ba;strokeColor=#fef8ba;" parent="1" vertex="1">
+          <mxGeometry x="1161" y="920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-75" value="Список ЛС с положитель-ным балансом" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="1081" y="920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-76" value="Платежная система" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#e3818c;strokeColor=#e3818c;" parent="1" vertex="1">
+          <mxGeometry x="1400" y="830" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-77" value="Жалование выплачено" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1560" y="920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-82" value="Уменьшить баланс ЛС сотрудника на сумму выплаты" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="1800" y="920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-183" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=80;exitDy=45.5;exitPerimeter=0;" parent="1" source="mUZLVD3MMct8JdN2_CIU-85" target="mUZLVD3MMct8JdN2_CIU-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-85" value="Баланс ЛС сотрудника уменьшен" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1881" y="920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-89" value="Список исполнителей" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="760" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-91" value="Стоимость назначения задачи" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="1081" y="600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-92" value="Стоимость исполнения задачи" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="1081" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-93" value="Стоимость назначения задачи" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="1081" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-94" value="Текущий баланс ЛС сотрудника" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="1720" y="920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-95" value="Исполнитель" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#fef8ba;strokeColor=#fef8ba;" parent="1" vertex="1">
+          <mxGeometry x="1161" y="1080" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-96" value="Баланс своего ЛС" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="1081" y="1080" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-100" value="Почтовый сервер" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#e3818c;strokeColor=#e3818c;" parent="1" vertex="1">
+          <mxGeometry x="1400" y="1000" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=34.5;entryDy=0;entryPerimeter=0;curved=1;" parent="1" source="mUZLVD3MMct8JdN2_CIU-76" target="mUZLVD3MMct8JdN2_CIU-77" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-109" value="Журнал расходов и доходов ЛС" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="2270" y="940" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-112" value="Исполнитель" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#fef8ba;strokeColor=#fef8ba;" parent="1" vertex="1">
+          <mxGeometry x="2350" y="940" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-123" value="Учтено в аналитике" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2130" y="410.04999999999995" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-124" value="Учесть в аналитике" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="2050" y="410.04999999999995" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-125" value="Самая дорогая из выполненных за день задач" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="2280" y="410.04999999999995" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-126" value="Администра-тор или менеджер" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#fef8ba;strokeColor=#fef8ba;" parent="1" vertex="1">
+          <mxGeometry x="2360" y="410.04999999999995" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-129" value="Учтено в аналитике" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2130" y="300.04999999999995" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-130" value="Учесть в аналитике" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="2050" y="300.04999999999995" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-131" value="Сколько попугов ушло в минус" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="2280" y="300.04999999999995" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-132" value="Администра-тор или менеджер" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#fef8ba;strokeColor=#fef8ba;" parent="1" vertex="1">
+          <mxGeometry x="2360" y="300.04999999999995" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-152" value="Учтено в аналитике" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2130" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-153" value="Учесть в аналитике" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="2050" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-154" value="Сколько заработал топ-менеджмент" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#dff5a9;strokeColor=#dff5a9;" parent="1" vertex="1">
+          <mxGeometry x="2280" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-155" value="Администра-тор или бухгалтер" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#fef8ba;strokeColor=#fef8ba;" parent="1" vertex="1">
+          <mxGeometry x="2360" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-161" value="Auth" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=none;align=center;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="170" y="200" width="300" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-162" value="Tasks" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=none;align=center;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="170" y="380" width="860" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-167" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=80;exitDy=45.5;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="mUZLVD3MMct8JdN2_CIU-41" target="mUZLVD3MMct8JdN2_CIU-153" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-168" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=80;exitDy=45.5;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="mUZLVD3MMct8JdN2_CIU-48" target="mUZLVD3MMct8JdN2_CIU-130" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-169" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=80;exitDy=45.5;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="mUZLVD3MMct8JdN2_CIU-14" target="mUZLVD3MMct8JdN2_CIU-124" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-174" value="Добавлена запись аудита ЛС" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2130" y="840" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-175" value="Добавить запись аудита ЛС" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="2050" y="840" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-176" value="Добавлена запись аудита ЛС" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2130" y="730" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-177" value="Добавить запись аудита ЛС" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="2050" y="730" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-178" value="Добавлена запись аудита ЛС" style="shape=note;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;labelBackgroundColor=none;fillColor=#f3a865;strokeColor=#f3a865;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2130" y="630" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-179" value="Добавить запись аудита ЛС" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rotation=0;horizontal=1;size=11;fillColor=#b5d1f2;strokeColor=#b5d1f2;" parent="1" vertex="1">
+          <mxGeometry x="2050" y="630" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-180" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=80;exitDy=45.5;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="mUZLVD3MMct8JdN2_CIU-41" target="mUZLVD3MMct8JdN2_CIU-179" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-181" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=80;exitDy=45.5;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="mUZLVD3MMct8JdN2_CIU-48" target="mUZLVD3MMct8JdN2_CIU-177" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-182" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=80;exitDy=45.5;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="mUZLVD3MMct8JdN2_CIU-14" target="mUZLVD3MMct8JdN2_CIU-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-184" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" parent="1" source="mUZLVD3MMct8JdN2_CIU-73" target="mUZLVD3MMct8JdN2_CIU-76" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-185" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" parent="1" source="mUZLVD3MMct8JdN2_CIU-73" target="mUZLVD3MMct8JdN2_CIU-100" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mUZLVD3MMct8JdN2_CIU-186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=34.5;entryDy=0;entryPerimeter=0;curved=1;" parent="1" source="mUZLVD3MMct8JdN2_CIU-77" target="mUZLVD3MMct8JdN2_CIU-82" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1600" y="880" />
+              <mxPoint x="1835" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
