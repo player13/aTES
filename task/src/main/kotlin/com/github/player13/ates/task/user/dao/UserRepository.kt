@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface UserRepository : JpaRepository<User, UUID> {
+interface UserRepository : JpaRepository<User, Long> {
 
     fun findAllByRole(role: Role): List<User>
 }

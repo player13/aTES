@@ -12,6 +12,6 @@ class SendPayslipByEmailUseCase {
 }
 
 data class SendPayslipByEmailCommand(
-    val userId: UUID, // should be e-mail and full name here?
+    val userPublicId: UUID, // should be e-mail and full name here?
     val amount: Long,
 )

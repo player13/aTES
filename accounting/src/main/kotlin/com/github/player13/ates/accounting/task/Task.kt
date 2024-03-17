@@ -6,10 +6,12 @@ import java.util.UUID
 
 @Entity
 data class Task(
-    @Id
-    val id: UUID,
+    val publicId: UUID,
     val summary: String,
     val description: String,
     val assignmentFee: Byte,
     val completionReward: Byte,
-)
+) {
+    @Id
+    val id: Long? = null
+}

@@ -6,6 +6,7 @@ import com.github.player13.ates.auth.user.dao.UserRepository
 import com.github.player13.ates.auth.user.event.UserEventProducer
 import com.github.player13.ates.auth.user.event.toEvent
 import com.github.player13.ates.event.user.UserCreated
+import com.github.player13.ates.event.user.UserCreatedPayload
 import java.util.UUID
 import org.springframework.stereotype.Component
 
@@ -25,15 +26,15 @@ class RegisterUserUseCase(
 
         private fun RegisterUserCommand.toUser() =
             User(
-                id = UUID.randomUUID(),
+                publicId = UUID.randomUUID(),
                 login = login,
                 password = password,
                 role = role,
             )
 
         private fun User.toUserCreatedEvent() =
-            UserCreated.newBuilder()
-                .setId(id)
+            UserCreatedPayload.newBuilder()
+                .setPublicId(publicId)
                 .setLogin(login)
                 .setRole(role.toEvent())
                 .build()

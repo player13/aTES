@@ -14,13 +14,13 @@ class GetAccountBalanceAndTransactionsUseCase(
 
     fun get(command: GetAccountBalanceAndTransactionsCommand) =
         with(command) {
-            val userAccount = userAccountRepository.findByIdOrNull(userId)
-                ?: error("User $userId not found")
+            val userAccount = userAccountRepository.findByUserPublicId(userPublicId)
+                ?: error("User $userPublicId not found")
             val transactions = transactionRepository.findAllByUserAccountOrderByTimestampDesc(userAccount)
             userAccount to transactions
         }
 }
 
 data class GetAccountBalanceAndTransactionsCommand(
-    val userId: UUID,
+    val userPublicId: UUID,
 )

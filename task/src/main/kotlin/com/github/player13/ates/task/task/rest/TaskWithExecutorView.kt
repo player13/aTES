@@ -4,14 +4,14 @@ import com.github.player13.ates.task.task.Status
 import java.util.UUID
 
 data class TaskWithExecutorView(
-    val id: UUID,
+    val publicId: UUID,
     val summary: String,
     val description: String,
     val status: Status,
-    val executor: ExecutorView,
+    val executor: ExecutorUserView,
 ) {
-    data class ExecutorView(
-        val id: UUID,
+    data class ExecutorUserView(
+        val publicId: UUID,
         val login: String,
     )
 }

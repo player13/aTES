@@ -2,25 +2,57 @@
     "name": "TaskCreated",
     "namespace": "com.github.player13.ates.event.task",
     "type": "record",
-    "fields" : [
+    "fields": [
         {
-            "name": "id",
+            "name": "meta",
             "type": {
-                "type": "string",
-                "logicalType": "uuid"
+                "name": "TaskCreatedMeta",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "version",
+                        "type": {
+                            "name": "TaskCreatedVersion",
+                            "type": "enum",
+                            "symbols": [
+                                "v1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "sender",
+                        "type": "string"
+                    }
+                ]
             }
         },
         {
-            "name": "summary",
-            "type": "string"
-        },
-        {
-            "name": "description",
-            "type": "string"
-        },
-        {
-            "name": "status",
-            "type": "Status"
+            "name": "payload",
+            "type": {
+                "name": "TaskCreatedPayload",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "publicId",
+                        "type": {
+                            "type": "string",
+                            "logicalType": "uuid"
+                        }
+                    },
+                    {
+                        "name": "summary",
+                        "type": "string"
+                    },
+                    {
+                        "name": "description",
+                        "type": "string"
+                    },
+                    {
+                        "name": "status",
+                        "type": "Status"
+                    }
+                ]
+            }
         }
     ]
 }

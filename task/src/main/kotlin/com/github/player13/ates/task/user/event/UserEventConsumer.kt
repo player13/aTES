@@ -23,10 +23,12 @@ class UserEventConsumer(
     companion object {
 
         private fun UserCreated.toCommand() =
-            CreateUserCommand(
-                id = id,
-                login = login,
-                role = role.toDomain(),
-            )
+            with(payload) {
+                CreateUserCommand(
+                    publicId = publicId,
+                    login = login,
+                    role = role.toDomain(),
+                )
+            }
     }
 }

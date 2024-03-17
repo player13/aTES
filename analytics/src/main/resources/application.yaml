@@ -49,4 +49,4 @@ springdoc:
 
 event:
   transaction:
-    business: transactions.business
+    business: transactions

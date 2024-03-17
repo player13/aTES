@@ -12,9 +12,9 @@ class GetTasksInProgressUseCase(
 ) {
 
     fun get(command: GetTasksInProgressCommand): List<Task> =
-        taskRepository.findAllByExecutorIdAndStatus(command.executorId, Status.IN_PROGRESS)
+        taskRepository.findAllByExecutorPublicIdAndStatus(command.executorPublicId, Status.IN_PROGRESS)
 }
 
 data class GetTasksInProgressCommand(
-    val executorId: UUID,
+    val executorPublicId: UUID,
 )

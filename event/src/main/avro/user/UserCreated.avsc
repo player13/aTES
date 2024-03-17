@@ -2,21 +2,53 @@
     "name": "UserCreated",
     "namespace": "com.github.player13.ates.event.user",
     "type": "record",
-    "fields" : [
+    "fields": [
         {
-            "name": "id",
+            "name": "meta",
             "type": {
-                "type": "string",
-                "logicalType": "uuid"
+                "name": "UserCreatedMeta",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "version",
+                        "type": {
+                            "name": "UserCreatedVersion",
+                            "type": "enum",
+                            "symbols": [
+                                "v1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "sender",
+                        "type": "string"
+                    }
+                ]
             }
         },
         {
-            "name": "login",
-            "type": "string"
-        },
-        {
-            "name": "role",
-            "type": "Role"
+            "name": "payload",
+            "type": {
+                "name": "UserCreatedPayload",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "publicId",
+                        "type": {
+                            "type": "string",
+                            "logicalType": "uuid"
+                        }
+                    },
+                    {
+                        "name": "login",
+                        "type": "string"
+                    },
+                    {
+                        "name": "role",
+                        "type": "Role"
+                    }
+                ]
+            }
         }
     ]
 }

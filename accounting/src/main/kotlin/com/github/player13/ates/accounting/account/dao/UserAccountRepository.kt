@@ -9,11 +9,13 @@ import org.springframework.data.jpa.repository.Query
 import org.springframework.stereotype.Repository
 
 @Repository
-interface UserAccountRepository : JpaRepository<UserAccount, UUID> {
+interface UserAccountRepository : JpaRepository<UserAccount, Long> {
+
+    fun findByUserPublicId(userPublicId: UUID): UserAccount?
 
     @Lock(LockModeType.PESSIMISTIC_WRITE)
-    @Query("from UserAccount where userId = :userId")
-    fun findByUserIdWithLock(userId: UUID): UserAccount?
+    @Query("from UserAccount where userPublicId = :userPublicId")
+    fun findByUserPublicIdWithLock(userPublicId: UUID): UserAccount?
 
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     @Query("from UserAccount where balance > 0")

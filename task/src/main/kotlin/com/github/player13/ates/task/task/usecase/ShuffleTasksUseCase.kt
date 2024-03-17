@@ -1,6 +1,6 @@
 package com.github.player13.ates.task.task.usecase
 
-import com.github.player13.ates.event.task.TaskAssigned
+import com.github.player13.ates.event.task.TaskAssignedPayload
 import com.github.player13.ates.task.task.Status
 import com.github.player13.ates.task.task.Task
 import com.github.player13.ates.task.task.dao.TaskRepository
@@ -32,9 +32,9 @@ class ShuffleTasksUseCase(
     companion object {
 
         private fun Task.toTaskAssignedEvent() =
-            TaskAssigned.newBuilder()
-                .setId(id)
-                .setExecutorUserId(executor.id)
+            TaskAssignedPayload.newBuilder()
+                .setPublicId(publicId)
+                .setExecutorPublicId(executor.publicId)
                 .build()
     }
 }

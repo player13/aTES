@@ -23,6 +23,8 @@ schemaRegistry {
         // task
         subject("com.github.player13.ates.event.task.TaskCreated", "$avroSrc/task/TaskCreated.avsc", "AVRO")
             .addLocalReference("Status", "$avroSrc/task/Status.avsc")
+        subject("com.github.player13.ates.event.task.TaskUpdated", "$avroSrc/task/TaskUpdated.avsc", "AVRO")
+            .addLocalReference("Status", "$avroSrc/task/Status.avsc")
 
         subject("com.github.player13.ates.event.task.TaskAdded", "$avroSrc/task/TaskAdded.avsc", "AVRO")
         subject("com.github.player13.ates.event.task.TaskAssigned", "$avroSrc/task/TaskAssigned.avsc", "AVRO")

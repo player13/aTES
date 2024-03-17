@@ -29,5 +29,5 @@ spring:
 
 event:
   user:
-    streaming: users.streaming
-    business: users.business
+    streaming: user-stream
+    business: user-lifecycle
