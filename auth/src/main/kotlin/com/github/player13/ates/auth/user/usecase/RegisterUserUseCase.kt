@@ -3,24 +3,21 @@ package com.github.player13.ates.auth.user.usecase
 import com.github.player13.ates.auth.user.Role
 import com.github.player13.ates.auth.user.User
 import com.github.player13.ates.auth.user.dao.UserRepository
-import com.github.player13.ates.auth.user.event.UserCreatedEvent
-import com.github.player13.ates.auth.user.event.UserRegisteredEvent
-import com.github.player13.ates.auth.user.event.UserRegisteredEventProducer
-import com.github.player13.ates.auth.user.event.UserStreamingEventProducer
+import com.github.player13.ates.auth.user.event.UserEventProducer
+import com.github.player13.ates.auth.user.event.toEvent
+import com.github.player13.ates.event.user.UserCreated
 import java.util.UUID
 import org.springframework.stereotype.Component
 
 @Component
 class RegisterUserUseCase(
     private val userRepository: UserRepository,
-    private val userStreamingEventProducer: UserStreamingEventProducer,
-    private val userRegisteredEventProducer: UserRegisteredEventProducer,
+    private val userEventProducer: UserEventProducer,
 ) {
 
     fun register(command: RegisterUserCommand): User {
         val user = userRepository.save(command.toUser())
-        userStreamingEventProducer.send(user.toUserCreatedEvent())
-        userRegisteredEventProducer.send(user.toUserRegisteredEvent())
+        userEventProducer.send(user.toUserCreatedEvent())
         return user
     }
 
@@ -35,18 +32,11 @@ class RegisterUserUseCase(
             )
 
         private fun User.toUserCreatedEvent() =
-            UserCreatedEvent(
-                id = id,
-                login = login,
-                role = role,
-            )
-
-        private fun User.toUserRegisteredEvent() =
-            UserRegisteredEvent(
-                id = id,
-                login = login,
-                role = role,
-            )
+            UserCreated.newBuilder()
+                .setId(id)
+                .setLogin(login)
+                .setRole(role.toEvent())
+                .build()
     }
 }
 

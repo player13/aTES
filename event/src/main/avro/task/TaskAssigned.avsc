@@ -1,0 +1,21 @@
+{
+    "name": "TaskAssigned",
+    "namespace": "com.github.player13.ates.event.task",
+    "type": "record",
+    "fields" : [
+        {
+            "name": "id",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "executorUserId",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        }
+    ]
+}

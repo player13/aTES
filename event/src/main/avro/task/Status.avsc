@@ -1,0 +1,9 @@
+{
+    "name": "Status",
+    "namespace": "com.github.player13.ates.event.task",
+    "type": "enum",
+    "symbols" : [
+        "IN_PROGRESS",
+        "COMPLETED"
+    ]
+}

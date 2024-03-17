@@ -1,0 +1,11 @@
+{
+    "name": "Role",
+    "namespace": "com.github.player13.ates.event.user",
+    "type": "enum",
+    "symbols" : [
+        "ADMINISTRATOR",
+        "ACCOUNTANT",
+        "MANAGER",
+        "EMPLOYEE"
+    ]
+}
